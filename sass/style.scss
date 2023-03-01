@@ -1,0 +1,140 @@
+/* Variables */
+$color-one: #0097e6;
+$color-two: #33d9b2;
+$color-three: #ff5252;
+$font-company: 'Satisfy', cursive;
+$font-header: 'Signika', sans-serif;
+$transition: 1s all;
+
+/* Global */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* header */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-inner:first-child {
+    flex: 1;
+    height: 100px;
+}
+
+.nav-inner {
+    flex: 2;
+    height: 100px;
+    text-align: center;
+}
+
+.nav {
+    max-width: 1000px;
+    display: flex;
+    margin: 20px auto;
+    flex-wrap: wrap;
+}
+
+header {
+    background-image: url("https://images.pexels.com/photos/250459/pexels-photo-250459.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 0;
+}
+
+.nav-inner ul {
+    list-style-type: none;
+}
+
+.nav-inner {
+    li {
+    display: inline;
+    margin: 0 10px;
+    }
+    a {
+    font-family: $font-header;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: $transition;
+    }
+    
+}
+
+.nav-inner a:hover {
+    color: gold;
+}
+
+.btn {
+    display: inline-block;
+    margin: 24px auto 0 auto;
+    width: 160px;
+    padding: 16px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+    transition: $transition;
+}
+
+.btn:hover {
+    background-position: 0 100%;
+    color: #fff;
+}
+
+.btn-one {
+    border-color: gold;
+    color: gold;
+    font-weight: 700;
+    background-image: linear-gradient(90deg, gold 50%, transparent 50%);
+}
+
+.header-title {
+    text-align: center;
+    margin: 100px auto;
+}
+
+.nav-inner h2 {
+    font-family: $font-company;
+    color: gold;
+    font-size: 60px;
+    margin: 10px auto;
+}
+
+.header-title {
+    h1 {
+        font-family: $font-header;
+        font-size: 60px;
+        color: #fff;
+    }
+    h3 {
+        font-family: $font-company;
+        font-size: 40px;
+        color: #fff;
+    }
+}
+
+/* Media */
+
+@media (max-width: 767px){
+    .nav-inner li {
+      display: block;
+    }
+    .nav-inner:first-child {
+      flex: 1 100%;
+      height: 100px;
+      text-align: center;
+     }
+    .nav-inner {
+      flex: 1 100%;
+      height: 100px;
+      text-align: center;
+      }
+  }
